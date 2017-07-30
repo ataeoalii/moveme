@@ -1,0 +1,199 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Google Fonts
+
+// Font Variables
+$fam: 'Mada', sans-serif;
+$main: #252529;
+$secondary: #8b8b9f;
+$highlight: #73e298;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: $fam;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+#top_header {
+	padding: 1em 0;
+	.logo {
+		float: left;
+		text-transform: uppercase;
+		font-size: 2.5em;
+		font-weight: 700;
+		a {
+			text-decoration: none;
+			color: #252529;
+		}
+	}
+
+	#main_nav {
+		float: right;
+		font-size: 1.2em;
+		padding-top: 1em;
+		a {
+			color: #8b8b9f;
+			text-decoration: none;
+			margin-left: 1.8em;
+		}
+		a:hover {
+			color: #73e298;
+		}
+	}
+}
+
+#banner {
+	background-image: image-url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 6em 0;
+	#banner_content_wrapper {
+		width: 900px;
+		max-width: 90%;
+		margin: 0 auto;
+		justify-content: center;
+		.title {
+			color: $highlight;
+			font-size: 5em;
+			display: block;
+		}
+		.description {
+			color: #FFF;
+			font-size: 1.2em;
+			display: block;
+		}
+	}
+}
+
+#top_cities {
+	padding: 2em 0;
+	header {
+		padding: 1.5em 0;
+		h2 {
+			font-size: 1.75em;
+			display: inline;
+		}
+		.view_more {
+			display: inline;
+			float: right;
+			margin: .75em 3.5% 0 0;
+		}
+	}
+}
+
+.row {
+	width: 100%;
+	.city {
+		width: 17.5%;
+		float: left;
+		margin-right: 2.5%;
+		img {
+			width: 100%;
+			max-width: 100%;
+			border-radius: .5em;
+			height: 120px;
+			max-height: 120px;
+		}
+		.city_name {
+			font-size: 1.25em;
+			margin: 1em 0 0 0;
+			color: $main;
+		}
+		.city_description {
+			font-size: .75em;
+			color: $secondary;
+			margin: 0.5em 0;
+		}
+	}
+}
+
+#newsletter {
+	padding: 2em 0;
+	background: #2a2a2e;
+	text-align: center;
+	display: block;
+	.newsletter_inner {
+		width: 600px;
+		margin: 0 auto;
+	}
+	h2 {
+		font-size: 1.785em;
+		color: #FFF;
+	}
+	.sign_up_form {
+		margin-top: 3em;
+		input[type="text"], input[type="email"] {
+			width: 48%;
+			margin: 0 .5%;
+			height: 3.25em;
+			border: none;
+			outline: none;
+			border-radius: .3em;
+			background: #404043;
+			padding: .5em 1.25em;
+			font-size: .8em;
+			color: #FFF;
+		}
+		button {
+			border: none;
+			outline: none;
+			padding: 1em 4.5em;
+			border-radius: 2em;
+			background: $highlight;
+			font-weight: 700;
+			font-size: .9em;
+			margin-top: 3em;
+		}
+	}
+}
+
+#main_footer {
+	padding: 2.5em 0;
+	text-align: center;
+	.logo {
+		text-transform: uppercase;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+	.copyright {
+		color: $secondary;
+		font-size: .75em;
+		margin: 0;
+	}
+	.links {
+		display: inline;
+		a {
+			color: $secondary;
+			font-size: .75em;
+			text-decoration: none;
+			margin: 0 .5em;
+			&:hover {
+				color: $highlight;
+			}
+		}
+	}
+}
