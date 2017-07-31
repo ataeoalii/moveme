@@ -1,0 +1,5 @@
+TODO:
+
+Add users
+Only allow admin to add cities
+Change html to display row per city
