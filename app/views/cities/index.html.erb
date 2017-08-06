@@ -6,6 +6,9 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>stateCode</th>
+      <th>countryCode</th>
+      <th>postalCode</th>
       <th>Latlocation</th>
       <th>Longlocation</th>
       <th>Timezone</th>
@@ -17,6 +20,9 @@
     <% @cities.each do |city| %>
       <tr>
         <td><%= city.name %></td>
+        <td><%= city.stateCode %></td>
+        <td><%= city.countryCode %></td>
+        <td><%= city.postalCode %></td>
         <td><%= city.latLocation %></td>
         <td><%= city.longLocation %></td>
         <td><%= city.timezone %></td>

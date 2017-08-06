@@ -1,10 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @city.name %>
+<p class="cityName">
+  <%= @city.name %>, <%= @city.stateCode %>, <%= @city.countryCode %>
 </p>
 
+<p>
+  <strong>Postal Code:</strong>
+  <%= @city.postalCode %>
+</p>
 <p>
   <strong>Latlocation:</strong>
   <%= @city.latLocation %>
@@ -19,6 +22,13 @@
   <strong>Timezone:</strong>
   <%= @city.timezone %>
 </p>
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFlHpDW2OM-HZ0-6aeOXlqR81M9hx5FOg&q=Los+Angeles+CA" allowfullscreen>
+</iframe>
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>

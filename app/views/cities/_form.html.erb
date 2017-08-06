@@ -17,6 +17,20 @@
   </div>
 
   <div class="field">
+    <%= form.label :stateCode %>
+    <%= form.text_field :stateCode, id: :city_stateCode %>
+  </div>
+  <div class="field">
+    <%= form.label :countryCode %>
+    <%= form.text_field :countryCode, id: :city_countryCode %>
+  </div>
+  <div class="field">
+    <%= form.label :postalCode %>
+    <%= form.text_field :postalCode, id: :city_postalCode %>
+  </div>
+
+
+  <div class="field">
     <%= form.label :latLocation %>
     <%= form.text_field :latLocation, id: :city_latLocation %>
   </div>

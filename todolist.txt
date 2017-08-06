@@ -2,4 +2,12 @@ TODO:
 
 Add users
 Only allow admin to add cities
-Change html to display row per city
+
+Add city nickname
+Add population
+Add image path
+
+Parameterize home page
+Parameterize map display
+
+Add more cities
